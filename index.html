@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <li class="burger__btn">
+            <i class="fas fa-bars" id="icons1"></i>
+          </li>
+          <li class="chats__section">
+            <i class="far fa-comments" id="icons"></i>
+            <span class="Icons__name">All chats</span>
+          </li>
+          <li class="chats__section">
+            <i class="far fa-comment" id="icons"></i>
+            <span class="Icons__name">Unread</span>
+          </li>
+          <li class="chats__section">
+            <i class="far fa-user" id="icons"></i>
+            <span class="Icons__name">Personal</span>
+          </li>
+          <li class="chats__section">
+            <i class="far fa-folder" id="icons"></i>
+            <span class="Icons__name">Bots</span>
+          </li>
+          <li class="chats__section">
+            <i class="fas fa-user-friends" id="icons"></i>
+            <span class="Icons__name">Groups</span>
+          </li>
+        </ul>
+      </nav>
+      
+      <section class="contacts__section">
+        <input
+          onkeyup="filteredSearch()"
+          placeholder="Search"
+          type="text"
+          class="search__contacts"
+        />
+
+        <div class="contacts__list">
+          <div class="noResult">No result</div>
+        </div>
+      </section>
+
+      <section class="messages__section">
+        <div class="data_about_contact_section">
+          <div class="data_about_contact">
+            <h4 class="data_contact_name"></h4>
+            <p class="contact_activity"></p>
+          </div>
+          <div class="contact__btns">
+            <i class="fas fa-search" id="search_message_btn"></i>
+            <i class="fas fa-phone-alt" id="phone_call_btn"></i>
+            <i class="far fa-window-maximize" id="search_message_btn"></i>
+            <i class="fas fa-ellipsis-v" id="three_point_btn"></i>
+          </div>
+        </div>
+        <div class="contact_message_section">
+          <ul class="typing__section">
+            <li class="message_list"></li>
+            <li class="message_list_from_me"></li>
+
+            <li class="select__chat">select a chat to start messaging</li>
+          </ul>
+        </div>
+        <div class="contact_type_section">
+          <i class="fas fa-paperclip" id="paper__clip"></i>
+          <input
+            type="text"
+            placeholder="Write a message..."
+            class="typing__input"
+          />
+          <div class="smiles__section">
+            <i class="far fa-smile"></i>
+          </div>
+          <button class="send__btn">
+            <i class="fab fa-telegram-plane"></i>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-replace-svg="nest"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
